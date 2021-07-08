@@ -1,12 +1,16 @@
 spring:
   datasource:
-    username: root
-    password: root
+    #username: root
+    username: thksystem
+    password: thksystem_2020
+    #password: root
     #mysql8版本以上的驱动包，需要指定一下时区
-    url: jdbc:mysql://127.0.0.1:3306/book?serverTimezone=GMT%2B8
+    #url: jdbc:mysql://127.0.0.1:3306/book?serverTimezone=GMT%2B8
     #url: jdbc:mysql://192.168.10.93:3306/book?serverTimezone=GMT%2B8
+    url: jdbc:oracle:thin:@www.thksoft.net:1523:THKCLOUD
     #mysql8版本以上指定新的驱动类
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: oracle.jdbc.driver.OracleDriver
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
 
